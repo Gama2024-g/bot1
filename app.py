@@ -3,7 +3,7 @@ from openai import OpenAI
 
 st.balloons()
 # Show title and description.
-st.title("💬 Bienvenido a mi primer app")
+st.title("  💬 Bienvenido a mi primer app  ")
 st.write(
    "Este es mi primer app con IA. "
    "Te comparto el link para que entres y te deleites [here](https://platform.openai.com/account/api-keys). "
