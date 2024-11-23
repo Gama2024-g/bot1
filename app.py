@@ -7,7 +7,7 @@ st.title("💬 Bienvenido a mi primer app")
 st.write(
    "Este es mi primer app con IA. "
    "Te comparto el link para que entres y te deleites [here](https://platform.openai.com/account/api-keys). "
-   "Para aprender a realizar el tuyo puedes entrar al siguiente tutoria. ponte chingon [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+   "Para aprender a realizar el tuyo puedes entrar al siguiente tutoria, ponte chingon [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 openai_api_key = st.secrets["api_key"] 
 # Create an OpenAI client.
