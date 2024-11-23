@@ -3,10 +3,10 @@ from openai import OpenAI
 
 st.balloons()
 # Show title and description.
-st.title("💬 Mi app")
+st.title("💬 Bienvenido a mi primer app")
 st.write(
-   "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-   "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
+   "Este es mi primer app con IA. "
+   "Te comparto el link para que entres y te deleites [here](https://platform.openai.com/account/api-keys). "
    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 openai_api_key = st.secrets["api_key"] 
@@ -29,7 +29,7 @@ stream = client.chat.completions.create(
             {"role": "user", "content": prompt}
         ],
         max_tokens=800,
-        temperature=0,
+        temperature=0.3,
     )
 respuesta = stream.choices[0].message.content
 with st.chat_message("assistant"):
